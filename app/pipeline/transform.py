@@ -1,10 +1,15 @@
-import pandas as pd
 from typing import List
+
+import pandas as pd
 
 
 def concat_dataframes(dataframes_list: List[pd.DataFrame]) -> pd.DataFrame:
     """
-    Função que transforma uma lista de DataFrames em um único DataFrame
-    """
+    Função que transforma uma lista de DataFrames em um único DataFrame.
 
+    args:
+    dataframes_list(List[pd.DataFrame])
+
+    return: DataFrame
+    """
     return pd.concat(dataframes_list, ignore_index=True)

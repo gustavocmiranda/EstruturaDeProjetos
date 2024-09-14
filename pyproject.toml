@@ -10,8 +10,17 @@ python = "^3.11"
 pandas = "^2.2.2"
 openpyxl = "^3.1.5"
 pytest = "^8.3.3"
+blue = "^0.9.1"
+isort = "^5.13.2"
+pydocstyle = "^6.3.0"
+taskipy = "^1.13.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "isort . && blue ."
+test = "poetry run pytest -v"
+run = "python3 app/main.py"
