@@ -1,0 +1,20 @@
+site_name: Workshop sobre Estrutura de Projetos
+theme:
+  name: material # or other theme
+  palette:
+    primary: blue
+  language: en
+
+repo_name: "gustavocmiranda/EstruturaDeProjetos"
+repo_url: "https://github.com/gustavocmiranda/EstruturaDeProjetos"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
