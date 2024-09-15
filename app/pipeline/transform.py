@@ -1,3 +1,4 @@
+"""Móodulo que faz a transformação dos dados na pipeline."""
 from typing import List
 
 import pandas as pd

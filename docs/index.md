@@ -25,4 +25,3 @@ flowchart LR
 
 # Função de Load
 ### ::: app.pipeline.load.load_excel
-
